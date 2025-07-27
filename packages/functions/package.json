@@ -4,9 +4,12 @@
   "type": "module",
   "dependencies": {
     "@budget-sst/core": "*",
+    "csv-parse": "^6.1.0",
+    "luxon": "^3.7.1",
     "sst": "*"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8"
+    "@types/aws-lambda": "^8",
+    "@types/luxon": "^3.6.2"
   }
 }
