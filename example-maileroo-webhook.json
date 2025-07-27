@@ -1,0 +1,120 @@
+{
+    "_id": "688618844c41928ab2588144",
+    "message_id": "CA+1Tj3a+Kym-4bAvGDKBPA5uP7G+UOwPcmWUoZwNrZOUNYx6Sg@mail.gmail.com",
+    "domain": "gmail.com",
+    "envelope_sender": "iwbarnardt+caf_=hello=c704980abed8afa9.maileroo.org@gmail.com",
+    "recipients": [
+        "hello@c704980abed8afa9.maileroo.org"
+    ],
+    "headers": {
+        "Arc-Authentication-Results": [
+            "i=2; mx.google.com; dkim=pass header.i=@gmail.com header.s=20230601 header.b=mureFmJV; spf=pass (google.com: domain of iwbarnardt@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=iwbarnardt@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com; dara=pass header.i=@gmail.com",
+            "i=1; mx.google.com; dkim=pass header.i=@gmail.com header.s=20230601 header.b=mureFmJV; spf=pass (google.com: domain of iwbarnardt@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=iwbarnardt@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com; dara=pass header.i=@gmail.com"
+        ],
+        "Arc-Message-Signature": [
+            "i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605; h=to:subject:message-id:date:from:mime-version:dkim-signature :delivered-to; bh=uYTxqghxCHVkDZ/bBpDVA5f1MPq4IobTaLzvQcqEi08=; fh=Mvav9O7hQVLvXnTzIql1dVbT2CH21ThlCeiWHcF92Lg=; b=lVT1yZmxdb87qciSo6yH3xfngK3FszBO8rODpkeIA6WrrzunVu/Sg8HHcfPpiKB75v Ts1o0CcJ4ApLBRz3pR44bhF++19SOK5AszAR0Q/g3PoDwnqkkJi0UsResu3NXgkG+GX1 NLr9vGfVYKnjDbcLveHlYRBgS+0ThDnUk0OPks8T4YI49HA5hXzRR47F9moT9e7esBlb TKZTCYgZar0bmJUkyiCOzSXgFLLZJbtb07C1JnJwNip8s8rK/EUwT5PcxGWTKTH+a6d5 Ld9O8HVvZyq1sxRyJ1vmgpuvnmxt40MUExkH+kW++igXV1sgEFLZLAL0+v2JCQ38DESz /GNA==; darn=c704980abed8afa9.maileroo.org",
+            "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605; h=to:subject:message-id:date:from:mime-version:dkim-signature; bh=uYTxqghxCHVkDZ/bBpDVA5f1MPq4IobTaLzvQcqEi08=; fh=7BC4n6d5F1RVFqNR1RuHF+XmP3Ui/h6kHLlj2tA0+WI=; b=A5M8yciQil7xeWBPKAq0SOku7QG17pdpk2dG5IKQFHZmSwW16Opd4gEMd+/nKLdZKv uv2k4Ep679RgFyM1Iqv4t1HKziXUSzsld8GTPeEsBNxcmp7hfUIr//cpr2wyFs7G2M43 oLnNgSOBWF8S426xWz86qLyisvMLLXnBcDoIXkD2zoeppym9PEBTZsz8+Qif1OoGZUJG MDkOZuJqv7QvyxQp0t8lM33ZrEhan4S/r4PB7r91GwIlNJpxnJoCVM9ujwpPDGwv57Dr uh5PitlfBmvdgDChDizX3FxSo9F9dkTGL+jB9gC+uNniEZRNU0v9pbCSGXXRdya2jk2B erkg==; dara=google.com"
+        ],
+        "Arc-Seal": [
+            "i=2; a=rsa-sha256; t=1753618563; cv=pass; d=google.com; s=arc-20240605; b=TOcmpJ+SaAVoHEJ/I6/M8Uw0hR4rN3xxKCKbS+/gH8kTu65iE/heKfyPq/j53qvh29 yTTmz+39OC+PP5k5x/9T7BTGnw/xB//po3ru7xN5GMdcTwHNHulXskkjbKOrhL34JVK3 vk3CKwNAH/kLd6heBSgdvMkZdbQkBqyk3drWWh7vJuEfRnob55e0/X9TkD3AmBddsTk7 9crGsUrEcc1xbSn5OQyignay0EFBL8HYgYRte0RZe4dvEra0xl4eMhlOkBhCQfnveOVQ xsmr2TcRt2rjkaJqaM1WtZmOPWRt5QX7r/WCIGp6ZUr9xLCIBUel0U3B0gxz0fC1j1eG NnOA==",
+            "i=1; a=rsa-sha256; t=1753618561; cv=none; d=google.com; s=arc-20240605; b=jLbX5xdKWXOeU5QwZcLTUp1pwTZr+/OezZJpeQ2sLSbe+b6tTypCg5EIL8TgtYQtuO HKDDReepQpPwQjdzrsJu+oA2BNxDp/miMXpRkSqEYYOk53i1YnKxiW+H/YtSrivuxZP5 z4n1osqZJ3nA32Lsvo6B8ynzEIpoLx/oxT2jE7n1EMu8A5519hAmFhqqf/xGg30WYeLp 1mLK67ESiJViDIyVsmDUwEPFwr0J4UJHZSb0mdK+1c8cN0ejZKJvu18OLlkhexK8Rl92 1EnoRG83w9qU32OKgBB1ZTPRfNqVFTa4QfW0FavghMQsSdkoRLEDeDRbHQR+AA7ry3Zz us2w=="
+        ],
+        "Authentication-Results": [
+            "mx.google.com; dkim=pass header.i=@gmail.com header.s=20230601 header.b=mureFmJV; spf=pass (google.com: domain of iwbarnardt@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=iwbarnardt@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com; dara=pass header.i=@gmail.com"
+        ],
+        "Content-Type": [
+            "multipart/mixed; boundary=\"000000000000626331063ae823f5\""
+        ],
+        "Date": [
+            "Sun, 27 Jul 2025 12:15:49 +0000"
+        ],
+        "Delivered-To": [
+            "iwbarnardt@gmail.com"
+        ],
+        "Dkim-Signature": [
+            "v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20230601; t=1753618561; x=1754223361; dara=google.com; h=to:subject:message-id:date:from:mime-version:from:to:cc:subject :date:message-id:reply-to; bh=uYTxqghxCHVkDZ/bBpDVA5f1MPq4IobTaLzvQcqEi08=; b=mureFmJVICw0fLWuFLdQj5OJVFkKOdgXf806S7n//UFRHsR0IGyCZFjDnhasItzQHr G8q5KxZsCrDJp28GZmGhFKBL9VuSXnnzPjMzrwQlyF/8DaBvAWSr2F6/GBYO1+KFJocD d2gq2KZjboSl4SkSdydSY79EaR6RvhqbTf/yZNeutd+4CYSXvIX9inUzVGoDHhOUAavq yjjb7YIMIeY9Qs7P9Mrw5ww5nqvSJrl12fJLvN7N8Pb9mJWxqkWJNF/18KEW+u9boqGH 1btBM+sMVCsCX46Yd6x3bSr08jGYKzM2wDsYX+YV+OzsGCAwof8zUlqtb+vweZFzw4R2 MV4A=="
+        ],
+        "From": [
+            "Ignatius Barnardt \u003ciwbarnardt@gmail.com\u003e"
+        ],
+        "Message-Id": [
+            "\u003cCA+1Tj3a+Kym-4bAvGDKBPA5uP7G+UOwPcmWUoZwNrZOUNYx6Sg@mail.gmail.com\u003e"
+        ],
+        "Mime-Version": [
+            "1.0"
+        ],
+        "Received": [
+            "by mail-ed1-x531.google.com with SMTP id 4fb4d7f45d1cf-61539e2065dso286297a12.1 for \u003chello@c704980abed8afa9.maileroo.org\u003e; Sun, 27 Jul 2025 05:16:03 -0700 (PDT)",
+            "by 2002:a05:6400:2483:b0:2a0:18ee:e0f4 with SMTP id ie3csp2573663ecb; Sun, 27 Jul 2025 05:16:01 -0700 (PDT)",
+            "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41]) by mx.google.com with SMTPS id a640c23a62f3a-af63597c9dbsor154154866b.4.2025.07.27.05.16.01 for \u003ciwbarnardt@gmail.com\u003e (Google Transport Security); Sun, 27 Jul 2025 05:16:01 -0700 (PDT)"
+        ],
+        "Received-Spf": [
+            "pass (google.com: domain of iwbarnardt@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+        ],
+        "Return-Path": [
+            "\u003ciwbarnardt@gmail.com\u003e"
+        ],
+        "Subject": [
+            "account_statement_1-Jul-2024_to_27-Jul-2025"
+        ],
+        "To": [
+            "Ignatius Barnardt \u003ciwbarnardt@gmail.com\u003e"
+        ],
+        "X-Forwarded-Encrypted": [
+            "i=2; AJvYcCVU5XLYZMfr7IWVI2clkBMTTA9xrTXUed2qxsdDLZhI1BmOww7/jFdxhvXtUGLWSkam1t3GIA==@c704980abed8afa9.maileroo.org"
+        ],
+        "X-Forwarded-For": [
+            "iwbarnardt@gmail.com hello@c704980abed8afa9.maileroo.org"
+        ],
+        "X-Forwarded-To": [
+            "hello@c704980abed8afa9.maileroo.org"
+        ],
+        "X-Gm-Features": [
+            "Ac12FXwvedSQ-sV9toI14kiv2y5XlHd_tmJ5MP8zUQtbQuhDPYGgu1eaPdtdhzw"
+        ],
+        "X-Gm-Gg": [
+            "ASbGncsaPcfYPlsSrpEWzV6bguzV+SqRYOLn74n6p5wyW80GxhmUNbUuKq8cFlPNTm+ ds9JKE+Q2/O/N1TZ+kN0MPbC3K02h85/OBEYbWlzecnMu+Slr+WckxWbiwJliIKa0MboStc7n5o MdoERZv2o/Jn73YrNhg34fLCmstjhQWIrx/jy97JoYpIvKCylGcEzqK4ib3KDyegDper6Q0MAKn zS4eA=="
+        ],
+        "X-Gm-Message-State": [
+            "AOJu0Yy+02ibEs+uYJqF67p8xTaMnmnBM37kBpJ192zuG8RvRQ1k0TUx j20GswE2oBwErbmOMnlxG8vLGuXgzlovz/qlGzbQR/FIzavmRwYeu4oN0aXI2n4VyF4xXPqI+kI si6gHX6t+O775Ocvqz8vj9rckblKuDe9S9oBDZt8/V2pkaznWPVhIUuqfDHrcm3+u"
+        ],
+        "X-Google-Dkim-Signature": [
+            "v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20230601; t=1753618563; x=1754223363; h=to:subject:message-id:date:from:mime-version:dkim-signature :delivered-to:x-forwarded-for:x-forwarded-to:x-gm-message-state:from :to:cc:subject:date:message-id:reply-to; bh=uYTxqghxCHVkDZ/bBpDVA5f1MPq4IobTaLzvQcqEi08=; b=KW9EeJglm59TjTFlpF/Pzgo1Qi3xfmsUnlowVB2wCBvqjZIDB73tuNNW1i6RrmqHKp nBf9QrsGixriB73jXTB3IXSBfYqbbWWcUEWMf7u3Y5w58L28XG7Kyn5u+pU5AFw/QIu9 AtIk7IBq7tFde4PLX240pMJUaAJHZMN9EQH9fyGMvV+f+wzm3FlMIJh+4BBnM27WL3sl dOAFJARxiLAFiE63nCBymHfQZ9xrTgzaKKR+R26bu13jwbM7rWDH8xavUA2ZuWSJAksZ 0zn50btAqINYjZmUnXbe9zOJs3xN9pBd4NgFdftR1pyxK6iiZXilcGL51QP/PF9dzpUu CYug=="
+        ],
+        "X-Google-Smtp-Source": [
+            "AGHT+IGVoiDPhWP+08OHfWy/ljbw0g/kZiqxzPINW7BDeviQ5szC0Upi05AzrQJdWP4oJKb4MroK7w/5enINPS/Xz1c="
+        ],
+        "X-Received": [
+            "by 2002:a17:907:c13:b0:ae1:a69c:ea76 with SMTP id a640c23a62f3a-af4c4320a94mr1269766866b.23.1753618563015; Sun, 27 Jul 2025 05:16:03 -0700 (PDT)",
+            "by 2002:a17:907:7211:b0:ae0:c1c4:645 with SMTP id a640c23a62f3a-af4c4320a22mr1232843166b.21.1753618561579; Sun, 27 Jul 2025 05:16:01 -0700 (PDT)",
+            "by 2002:a17:907:970c:b0:ad2:e08:e9e2 with SMTP id a640c23a62f3a-af61eb1a45bmr882815166b.27.1753618560722; Sun, 27 Jul 2025 05:16:00 -0700 (PDT)"
+        ]
+    },
+    "body": {
+        "plaintext": "\r\n",
+        "stripped_plaintext": "\n",
+        "html": "\r\n",
+        "stripped_html": "\u003chtml\u003e\u003chead\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e",
+        "other_parts": null,
+        "raw_mime": {
+            "url": "https://roo-inbound-store.nbg1.your-objectstorage.com/688618844c41928ab2588144/raw.mime?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=PXCGE7SXA8IQG411X833%2F20250727%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20250727T121604Z\u0026X-Amz-Expires=259200\u0026X-Amz-SignedHeaders=host\u0026x-id=GetObject\u0026X-Amz-Signature=cc992244536427e2d43b48cd0fb64132b3e65667b14d351b10f69786926b83f2",
+            "size": 238305
+        }
+    },
+    "attachments": [
+        {
+            "filename": "account_statement_1-Jul-2024_to_27-Jul-2025.csv",
+            "content_id": "\u003cD58171DF-5B5F-4C07-89C4-7692F00A632C\u003e",
+            "content_type": "text/csv",
+            "url": "https://roo-inbound-store.nbg1.your-objectstorage.com/688618844c41928ab2588144/account_statement_1-Jul-2024_to_27-Jul-2025.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=PXCGE7SXA8IQG411X833%2F20250727%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20250727T121605Z\u0026X-Amz-Expires=259200\u0026X-Amz-SignedHeaders=host\u0026x-id=GetObject\u0026X-Amz-Signature=d81a8f576a09a3bc12a741e6d6e12fbf4961bc53ffcfe2e68f688c7a6f9bf4ac",
+            "size": 167973
+        }
+    ],
+    "spf_result": "pass",
+    "dkim_result": true,
+    "is_dmarc_aligned": true,
+    "is_spam": false,
+    "deletion_url": "https://inbound-api.maileroo.net/email/688618844c41928ab2588144/18efbc262f086228c508c3b2c55a6199",
+    "validation_url": "https://inbound-api.maileroo.net/validate-callback/688618854c41928ab2588145/f52844e98962dfc570e377fd7623cef3",
+    "processed_at": 1753618564
+}

@@ -4,7 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "deploy-prod": "sst deploy --stage production",
+    "start-dev": "sst dev"
+  },
   "devDependencies": {
     "@tsconfig/node22": "^22",
     "typescript": "^5"
